@@ -1,6 +1,7 @@
 import { renderCatalog } from "../pages/render-catalog";
 import { renderCart } from "../pages/render-cart";
 import { renderAbout } from "../pages/render-about";
+import { ROUTES } from "../../router/routes";
 
 export default function renderPage(): void {
   const main = document.querySelector("main");
@@ -11,13 +12,13 @@ export default function renderPage(): void {
   let page: HTMLElement;
 
   switch (path) {
-    case "/":
+    case ROUTES.ABOUT:
       page = renderAbout();
       break;
-    case "/catalog":
+    case ROUTES.CATALOG:
       page = renderCatalog();
       break;
-    case "/cart":
+    case ROUTES.CART:
       page = renderCart();
       break;
     default:

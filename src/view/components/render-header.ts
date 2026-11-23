@@ -1,13 +1,14 @@
 import navigate from "../../router/navigate";
+import { ROUTES } from "../../router/routes";
 
 export default function renderHeader(): HTMLElement {
   const header = document.createElement("header");
   const nav = document.createElement("nav");
 
   const links = [
-    { title: "About Us", path: "/" },
-    { title: "Catalog", path: "/catalog" },
-    { title: "Cart", path: "/cart" },
+    { title: "About Us", path: ROUTES.ABOUT },
+    { title: "Catalog", path: ROUTES.CATALOG },
+    { title: "Cart", path: ROUTES.CART },
   ];
 
   links.forEach((link) => {
