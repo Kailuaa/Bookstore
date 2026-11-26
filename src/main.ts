@@ -1,6 +1,7 @@
 import renderHeader from "./view/components/render-header";
 import renderFooter from "./view/components/render-footer";
 import renderPage from "./view/utils/render-page";
+import "./styles/main.scss";
 
 const body = document.body;
 const header = renderHeader();

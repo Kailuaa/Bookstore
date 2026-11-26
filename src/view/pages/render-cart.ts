@@ -1,4 +1,4 @@
-export function renderCart(): HTMLElement {
+export default function renderCart(): HTMLElement {
   const page = document.createElement("section");
   page.textContent = "Cart";
 

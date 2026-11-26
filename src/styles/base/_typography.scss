@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: v.$font-weight-medium;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: v.$font-size-3xl;
+  letter-spacing: -0.04em;
+
+  @include m.mobile {
+    font-size: v.$font-size-2xl;
+  }
+}
+
+h2 {
+  font-size: v.$font-size-2xl;
+  letter-spacing: -0.03em;
+
+  @include m.mobile {
+    font-size: v.$font-size-xl;
+  }
+}
+
+h3 {
+  font-size: v.$font-size-lg;
+}
+
+p {
+  line-height: 1.6;
+}

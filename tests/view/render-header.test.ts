@@ -24,13 +24,13 @@ describe("renderHeader", () => {
   });
   it("should contain 3 navigation links", () => {
     const header = renderHeader();
-    const links = header.querySelectorAll("a");
+    const links = header.querySelectorAll("nav a");
 
     expect(links.length).toBe(3);
   });
   it("should have the right href", () => {
     const header = renderHeader();
-    const links = header.querySelectorAll("a");
+    const links = header.querySelectorAll("nav a");
 
     expect(links[0].getAttribute("href")).toBe("/");
     expect(links[1].getAttribute("href")).toBe("/catalog");

@@ -1,7 +1,8 @@
-import { renderCatalog } from "../pages/render-catalog";
-import { renderCart } from "../pages/render-cart";
-import { renderAbout } from "../pages/render-about";
+import renderCatalog from "../pages/render-catalog";
+import renderCart from "../pages/render-cart";
+import renderAbout from "../pages/render-about";
 import { ROUTES } from "../../router/routes";
+import { books } from "../../data/books";
 
 export default function renderPage(): void {
   const main = document.querySelector("main");
@@ -16,7 +17,7 @@ export default function renderPage(): void {
       page = renderAbout();
       break;
     case ROUTES.CATALOG:
-      page = renderCatalog();
+      page = renderCatalog(books);
       break;
     case ROUTES.CART:
       page = renderCart();

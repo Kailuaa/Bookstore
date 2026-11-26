@@ -2,21 +2,21 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import renderPage from "../../src/view/utils/render-page";
 
 vi.mock("../../src/view/pages/render-about", () => ({
-  renderAbout: () => {
+  default: () => {
     const page = document.createElement("section");
     page.id = "about";
     return page;
   },
 }));
 vi.mock("../../src/view/pages/render-cart", () => ({
-  renderCart: () => {
+  default: () => {
     const page = document.createElement("section");
     page.id = "cart";
     return page;
   },
 }));
 vi.mock("../../src/view/pages/render-catalog", () => ({
-  renderCatalog: () => {
+  default: () => {
     const page = document.createElement("section");
     page.id = "catalog";
     return page;
