@@ -1,0 +1,61 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #111111;
+
+$color-background: #ffffff;
+$color-surface: #f5f5f5;
+$color-surface-hover: #eeeeee;
+
+$color-text: #111111;
+$color-text-secondary: #666666;
+
+$color-border: #e5e5e5;
+$color-border-dark: #cccccc;
+
+$color-accent: #f02d35;
+$color-accent-hover: #d9232b;
+
+// Typography
+$font-family: "Inter", sans-serif;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 28px;
+$font-size-2xl: 36px;
+$font-size-3xl: 48px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Layout
+$container-width: 1200px;
+
+$header-height: 80px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+$spacing-3xl: 64px;
+$spacing-4xl: 96px;
+
+// Border radius
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-pill: 999px;
+
+// Breakpoints
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 768px;
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-normal: 250ms ease;

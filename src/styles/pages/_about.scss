@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.about {
+  @include m.container;
+
+  &__hero {
+    padding-block: v.$spacing-4xl;
+  }
+
+  &__hero h1 {
+    max-width: 700px;
+    margin-bottom: v.$spacing-lg;
+  }
+
+  &__hero p {
+    max-width: 550px;
+    margin-bottom: v.$spacing-xl;
+    font-size: 18px;
+    color: v.$color-text-secondary;
+  }
+
+  &__hero a,
+  &__cta a {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: v.$radius-pill;
+    background-color: v.$color-black;
+    color: v.$color-white;
+    font-size: v.$font-size-sm;
+    font-weight: v.$font-weight-medium;
+    transition: background-color v.$transition-fast;
+
+    &:hover {
+      background-color: v.$color-text-secondary;
+    }
+  }
+
+  &__benefits {
+    padding-block: v.$spacing-3xl;
+  }
+
+  &__benefits > h2 {
+    margin-bottom: v.$spacing-xl;
+    font-size: v.$font-size-sm;
+    font-weight: v.$font-weight-semibold;
+    letter-spacing: 0.08em;
+  }
+
+  &__benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: v.$spacing-lg;
+  }
+
+  &__benefit {
+    padding: v.$spacing-xl;
+    background-color: v.$color-surface;
+    border-radius: v.$radius-md;
+  }
+
+  &__benefit h3 {
+    margin-bottom: v.$spacing-md;
+  }
+
+  &__benefit p {
+    font-size: v.$font-size-sm;
+    color: v.$color-text-secondary;
+  }
+
+  &__cta {
+    padding-block: v.$spacing-4xl;
+    text-align: center;
+  }
+
+  &__cta h2 {
+    margin-bottom: v.$spacing-xl;
+  }
+
+  @include m.mobile {
+    &__hero,
+    &__cta {
+      padding-block: v.$spacing-3xl;
+    }
+
+    &__benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

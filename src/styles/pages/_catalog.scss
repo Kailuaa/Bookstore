@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.catalog {
+  @include m.container;
+
+  padding-block: v.$spacing-3xl;
+
+  &__header {
+    margin-bottom: v.$spacing-2xl;
+  }
+
+  &__header h1 {
+    margin-bottom: v.$spacing-md;
+  }
+
+  &__header p {
+    color: v.$color-text-secondary;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: v.$spacing-xl;
+  }
+
+  @include m.tablet {
+    &__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @include m.mobile {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
